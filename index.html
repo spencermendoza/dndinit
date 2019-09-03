@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Initiative App</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Initiative</h1>
+        <p>A Dungeons and Dragons App</p>
+        <form id="combatant">
+          <input type="text" name="name" id='name' placeholder="Add a combatant.">
+          <input type="number" name="init" id='init' placeholder="Add an initiative.">
+          <input type="number" name="hp" id='hp' placeholder="Add some HP.">
+          <input type="number" name="ac" id='ac' placeholder="What's the AC?">
+          <input type="number" name="damage" id='damage' placeholder="Do they have damage?">
+          <button type="submit" name="submit" value="submit">Add</button>
+        </form>
+      </header>
+  		
+      <div class = "filters">
+        <ul class ="combatFilters"></ul>
+      </div>
+      <div class="main">	
+        <h2>Combat Tracker:</h2>
+        <ul id="combatList"></ul>	
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
